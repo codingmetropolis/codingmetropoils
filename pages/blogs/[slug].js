@@ -1,9 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-
-
-
 import * as Component from "../../components";
 
 import { getPosts, getPostDetails } from "../../services";
