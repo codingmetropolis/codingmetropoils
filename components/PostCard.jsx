@@ -6,19 +6,9 @@ import Link from 'next/link';
 import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
-  <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
-    {/* <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
-      <Image
-        unoptimized
-        loader={grpahCMSImageLoader}
-        alt={post.title}
-        className="shadow-lg rounded-t-lg lg:rounded-lg"
-        layout="fill"
-        src={post.featuredImage.url}
-      />
-    </div> */}
+  <div className=" bg-white  shadow-xl rounded-md p-0 lg:pb-12 mb-8 border-4 border-black-300">
     <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-      <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+      <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover   object-center shadow-lg rounded-t-lg lg:rounded-t-md rounded-b-none" />
     </div>
 
     <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
@@ -32,7 +22,7 @@ const PostCard = ({ post }) => (
           alt={post.author.name}
           height="30px"
           width="30px"
-          className="align-middle rounded-full"
+          className="align-middle rounded-full object-contain object-center"
           src={post.author.photo.url}
         />
         <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">{post.author.name}</p>
@@ -49,7 +39,7 @@ const PostCard = ({ post }) => (
     </p>
     <div className="text-center">
       <Link href={`/blogs/${post.slug}`}>
-        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+        <span className="transition duration-500 shadow-lg ease transform hover:-translate-y-1 inline-block bg-blue-500 text-lg font-medium rounded-md text-white px-8 py-3 cursor-pointer">Continue Reading</span>
       </Link>
     </div>
   </div>

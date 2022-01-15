@@ -10,11 +10,11 @@ const navLinks=[
 ]
 const Header = () => {
   return (
-    <div className="container mx-auto px-10 mb-8">
-      <div className="border-b w-full inline-block border-blue-400 py-8">
+    <div className="container mx-auto  mb-8">
+      <div className="border-b w-full inline-block  py-8   bg-blue-600 px-8 ">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-white">
+            <span className="cursor-pointer text-4xl text-white  ">
               CodingMetropolis
             </span>
           </Link>
@@ -22,7 +22,7 @@ const Header = () => {
         <div className="hidden md:float-left md:contents">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.url}>
-              <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+              <span className="md:float-right mt-2 align-middle text-white  text-xl ml-4 cursor-pointer">
                 {link.name}
               </span>
             </Link>
