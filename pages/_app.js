@@ -1,14 +1,10 @@
-import React from 'react';
+import Layout from "@/components/common/Layout"
+import "@/styles/main.scss"
 
-import '../styles/globals.scss';
-import { Layout } from '../components';
-
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  );
+  )
 }
-
-export default MyApp;
