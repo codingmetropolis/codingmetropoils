@@ -37,6 +37,24 @@
       color: $purple;
     }
   }
+  @media screen and (max-width: 800px) {
+    .hero-title {
+      font-size: $xll;
+    }
+    .sub-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .titleSm {
+        margin: 0 $xl-1;
+      }
+      span {
+        font-size: $xll;
+        line-height: 0;
+        color: $purple;
+      }
+    }
+  }
 }
 .hero-sec {
   position: relative;
@@ -161,6 +179,7 @@ footer {
     line-height: 0;
     padding-top: $xl-1;
     margin-bottom: $xll;
+    font-size: $xl-5;
   }
   h3 {
     font-weight: 400;
