@@ -1,6 +1,7 @@
 import { Title, TitleSm } from "@/components/common/Title"
+import Link from "next/link"
 import React from "react"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiFillYoutube } from "react-icons/ai"
 import { BiUserCircle } from "react-icons/bi"
 import { BsFacebook } from "react-icons/bs"
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi"
@@ -41,17 +42,30 @@ const Contact = () => {
                 </div>
               </div>
               <ul>
-                <li className='icon'>
-                  <BsFacebook size={25} />
+              <li className='icon'>
+                  <Link href='https://www.facebook.com/profile.php?id=61562625216744'>
+                    <BsFacebook size={25} />
+                  </Link>
                 </li>
                 <li className='icon'>
-                  <AiFillBehanceCircle size={25} />
+                  <Link href='https://www.youtube.com/@CodingMetropolis'>
+                    <AiFillYoutube size={25} />
+                  </Link>
                 </li>
                 <li className='icon'>
-                  <AiFillInstagram size={25} />
+                  <Link href='https://www.instagram.com/codingmetropolis/'>
+                    <AiFillInstagram size={25} />
+                  </Link>
                 </li>
                 <li className='icon'>
-                  <AiFillLinkedin size={25} />
+                  <Link href='https://www.linkedin.com/company/coding-metropolis/?viewAsMember=true'>
+                    <AiFillLinkedin size={25} />
+                  </Link>
+                </li>
+                <li className='icon'>
+                  <Link href='https://x.com/cod_metropolis'>
+                    <AiFillTwitterCircle size={25} />
+                  </Link>
                 </li>
               </ul>
             </div>

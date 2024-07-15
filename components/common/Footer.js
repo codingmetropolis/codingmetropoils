@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { TitleLogo } from "./Title"
 import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai"
+import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiFillYoutube } from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -63,23 +63,28 @@ const Footer = () => {
               <h3>CONNECT</h3>
               <div className='connect'>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.facebook.com/profile.php?id=61562625216744'>
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.youtube.com/@CodingMetropolis'>
                     <AiFillYoutube size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.instagram.com/codingmetropolis/'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.linkedin.com/company/coding-metropolis/?viewAsMember=true'>
                     <AiFillLinkedin size={25} />
+                  </Link>
+                </li>
+                <li>
+                  <Link href='https://x.com/cod_metropolis'>
+                    <AiFillTwitterCircle size={25} />
                   </Link>
                 </li>
               </div>
