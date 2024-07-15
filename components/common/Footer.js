@@ -20,8 +20,8 @@ const Footer = () => {
               <br />
               <h3>+91 7338085595</h3>
               <br />
-
-              <button className='button-primary'>Request for quote</button>
+              <Link href='/appointment' className='button-primary'>Request for quote</Link>
+           
             </div>
             <ul>
               <h3>COMPANY</h3>

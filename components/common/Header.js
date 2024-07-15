@@ -44,11 +44,13 @@ const Header = () => {
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
             </Link>
-            <Link href={'/contact'} className='button-primary' style={{marginLeft:30}}>book a consultation</Link>
-          </nav>
-          <button className="button-menu" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
-        </div>
-      </header>
+
+
+            <Link href={"/appointment"} className='button-primary' style={{ marginLeft: 30 }}>book a consultation</Link>
+        </nav>
+        <button className="button-menu" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
+      </div>
+    </header >
     </>
   )
 }
