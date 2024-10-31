@@ -22,8 +22,8 @@ const Contact = () => {
               <div className='contact-deatils'>
                 <div className='box'>
                   <FiHeadphones size={30} className='icons' />
-                  <h3>+91 7338085595</h3>
-                  <span>Call us: Mon - Fri 9:00 - 19:00</span>
+                  <h3>+91 8762363186</h3>
+                  <span>Call us: 24X7</span>
                 </div>
                 <div className='box'>
                   <IoLocationOutline size={30} className='icons' />
@@ -32,38 +32,38 @@ const Contact = () => {
                 </div>
                 <div className='box'>
                   <FiHelpCircle size={30} className='icons' />
-                  <h3>info@codingmetropolis.tech</h3>
+                  <h3>contact@codemadebiz.com</h3>
                   <span>Drop us a line anytime!</span>
                 </div>
                 <div className='box'>
                   <BiUserCircle size={30} className='icons' />
-                  <h3>hr@codingmetropolis.tech</h3>
-                  <span>Career at CodingMetropolis</span>
+                  <h3>hr@codemadebiz.com</h3>
+                  <span>Career at CodeMadeBiz</span>
                 </div>
               </div>
               <ul>
               <li className='icon'>
-                  <Link href='https://www.facebook.com/profile.php?id=61562625216744'>
+                  <Link href='https://www.facebook.com/codemadebiz'>
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 <li className='icon'>
-                  <Link href='https://www.youtube.com/@CodingMetropolis'>
+                  <Link href='https://www.youtube.com/@codemadebiz'>
                     <AiFillYoutube size={25} />
                   </Link>
                 </li>
                 <li className='icon'>
-                  <Link href='https://www.instagram.com/codingmetropolis/'>
+                  <Link href='https://www.instagram.com/codemadebiz/'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li className='icon'>
-                  <Link href='https://www.linkedin.com/company/coding-metropolis/?viewAsMember=true'>
+                  <Link href='https://www.linkedin.com/company/codemadebiz'>
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
                 <li className='icon'>
-                  <Link href='https://x.com/cod_metropolis'>
+                  <Link href='https://x.com/codemadebiz'>
                     <AiFillTwitterCircle size={25} />
                   </Link>
                 </li>

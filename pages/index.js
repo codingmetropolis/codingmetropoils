@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Coding Metropolis</title>
+        <title>Code Made Biz</title>
       </Head>
       <Hero />
     </>

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='Metropolis' caption='Coding' className='logobg' />
+              <TitleLogo title='Biz' caption='CodeMade' className='logobg' />
               <br />
               <span>
                 Questions? Reach us
@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
               <br />
               <br />
-              <h3>+91 7338085595</h3>
+              <h3>+91 8762363186</h3>
               <br />
               <Link href='/appointment' className='button-primary'>Request for quote</Link>
            
@@ -63,27 +63,27 @@ const Footer = () => {
               <h3>CONNECT</h3>
               <div className='connect'>
                 <li>
-                  <Link href='https://www.facebook.com/profile.php?id=61562625216744'>
+                  <Link href='https://www.facebook.com/codemadebiz'>
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='https://www.youtube.com/@CodingMetropolis'>
+                  <Link href='https://www.youtube.com/@codemadebiz'>
                     <AiFillYoutube size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='https://www.instagram.com/codingmetropolis/'>
+                  <Link href='https://www.instagram.com/codemadebiz/'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='https://www.linkedin.com/company/coding-metropolis/?viewAsMember=true'>
+                  <Link href='https://www.linkedin.com/company/codemadebiz'>
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='https://x.com/cod_metropolis'>
+                  <Link href='https://x.com/codemadebiz'>
                     <AiFillTwitterCircle size={25} />
                   </Link>
                 </li>
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE CODING-METROPOLIS. ALL RIGHTS RESERVED.</span>
+              <span>© 2023 THE CodeMadeBiz. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
               <span>PRIVACY POLICY</span>

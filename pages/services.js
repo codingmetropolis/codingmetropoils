@@ -6,7 +6,7 @@ const services = () => {
   return (
     <>
       <Head>
-        <title>Services - CodingMetropolis</title>
+        <title>Services - CodeMadeBiz</title>
       </Head>
       <Services />
     </>
