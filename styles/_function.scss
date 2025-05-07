@@ -9,6 +9,32 @@
   grid-template-columns: $columns;
   grid-gap: $gap;
 }
+
+// Products and Services specific grid
+.products-grid,
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .products-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .products-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+// Other grid classes
 .grid-2 {
   @include grid(repeat(2, 1fr), 50px);
 }
@@ -18,7 +44,6 @@
 .grid-4 {
   @include grid(repeat(4, 1fr), 50px);
 }
-
 .grid-6 {
   @include grid(repeat(6, 1fr), 30px);
 }
@@ -41,5 +66,47 @@
   .grid-6,
   .grid-4 {
     @include grid(repeat(1, 1fr), 50px);
+  }
+}
+
+// Mobile first approach
+@media screen and (max-width: 576px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-6 {
+    @include grid(repeat(1, 1fr), 20px);
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .grid-3,
+  .grid-4 {
+    @include grid(repeat(2, 1fr), 20px);
+  }
+  .grid-6 {
+    @include grid(repeat(3, 1fr), 20px);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .grid-3 {
+    @include grid(repeat(2, 1fr), 30px);
+  }
+  .grid-4 {
+    @include grid(repeat(3, 1fr), 30px);
+  }
+  .grid-6 {
+    @include grid(repeat(4, 1fr), 30px);
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .grid-3 {
+    @include grid(repeat(3, 1fr), 30px);
   }
 }

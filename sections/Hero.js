@@ -6,6 +6,7 @@ import Testimonial from "@/components/Testimonial"
 import TrustPilotReview from "@/components/TrustPilotReview"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
 import { BlogCard, Brand } from "@/components/router"
+import { Products, Services } from "@/sections"
 import React from "react"
 
 const Hero = () => {
@@ -44,15 +45,17 @@ const Hero = () => {
       </section>
       <Expertise />
       <Banner />
+      <Products />
+      <Services />
+      <Testimonial />
       <TrustPilotReview />
-      {/* <Testimonial />
       <ShowCase />
       <Brand />
 
       <div className='text-center'>
         <Title title='Latest news & articles' />
       </div>
-      <BlogCard /> */}
+      <BlogCard />
     </>
   )
 }
