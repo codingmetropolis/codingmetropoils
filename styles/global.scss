@@ -24,6 +24,9 @@
     line-height: 115px;
     font-weight: 600;
     margin: $xl-6 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: $xl-6 auto;
   }
   .sub-heading {
     display: flex;
@@ -37,26 +40,46 @@
       color: $purple;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 992px) {
     .hero-title {
-      font-size: $xll;
+      font-size: 70px;
+      line-height: 85px;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    height: auto !important;
+    padding-bottom: 60px;
+    padding-top: $xll;
+    .hero-title {
+      font-size: 60px;
+      line-height: 70px;
+      margin: 40px auto 50px;
     }
     .sub-heading {
       display: flex;
       flex-direction: column;
       align-items: center;
-     
-      
-
       .titleSm {
-        margin: 0 $xl-1;
+        margin: 8px $xl-1;
       }
       span {
-        font-size: $xl;
-        line-height: 0;
-        color: $purple;
-       
+        display: inline-block;
+        font-size: 30px;
+        line-height: 10px;
+        height: 10px;
+        margin: 5px 0;
       }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .hero-title {
+      font-size: 52px;
+      line-height: 62px;
+      padding: 0 10px;
+      margin: 35px auto 45px;
     }
   }
 }
@@ -91,6 +114,11 @@
     background: rgb(192, 90, 255);
     background: $gradient;
     @include flex(center, space-between, none);
+  }
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 40px;
+    }
   }
 }
 
@@ -224,6 +252,95 @@ footer {
     background-position: center;
     z-index: -1;
   }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    
+    .contact-link {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s;
+      flex: 1;
+      
+      h3 {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      &:hover {
+        color: $purple;
+      }
+    }
+    
+    .copy-button {
+      margin-left: 10px;
+      background: transparent;
+      border: none;
+      color: rgba($white, 0.6);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 5px;
+      border-radius: 4px;
+      transition: all 0.3s;
+      flex-shrink: 0;
+      
+      &:hover {
+        color: $purple;
+        background-color: rgba($white, 0.1);
+      }
+      
+      .copied-tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $purple;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        opacity: 1;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        z-index: 5;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: $purple transparent transparent transparent;
+        }
+      }
+    }
+  }
+
+  .legal {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      
+      .text {
+        margin-bottom: 15px;
+      }
+      
+      .connect {
+        justify-content: center;
+      }
+    }
+  }
 }
 
 //Agency Page
@@ -259,6 +376,25 @@ footer {
       border-left: 5px solid $indigo;
       padding-left: $xl-5;
     }
+  }
+  .card-img {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  .flex,
+  .flex1 {
+    flex-direction: column;
+  }
+  .grid-3 {
+    @include grid(repeat(3, 1fr), 50px);
   }
 }
 
@@ -338,13 +474,25 @@ footer {
 
 @media screen and (max-width: 800px) {
   .banner {
+    margin-top: 60px;
     .container {
-      @include flex(center, none, column);
-      button {
-        margin-top: 50px;
+      @include flex(center, center, column);
+      padding: 50px 30px;
+      text-align: center;
+      a {
+        margin-top: 40px;
+        padding: 15px 40px;
+        font-size: 18px;
       }
       h1 {
         font-size: 30px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      .title-logo {
+        font-size: 28px;
+        line-height: 1.4;
+        margin-bottom: 10px;
       }
     }
   }
