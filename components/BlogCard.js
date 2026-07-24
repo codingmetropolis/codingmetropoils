@@ -1,12 +1,12 @@
 import React from "react"
 import { Card } from "./common/Card"
-import { blogdata } from "@/assets/data/dummydata"
+import { latestArticles2026 } from "@/assets/data/latestArticles2026"
 
 const BlogCard = () => {
   return (
     <>
       <div className='container blog-card grid-2 py'>
-        {blogdata.map((item) => (
+        {latestArticles2026.map((item) => (
           <Card data={item} key={item.id} path='blogs' />
         ))}
       </div>

@@ -31,26 +31,28 @@ function SamplePrevArrow(props) {
 }
 
 const Testimonial = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
         },
-      },
-    ],
-  }
+      ],
+    }
   return (
     <>
       <section className='testimonial'>
@@ -60,8 +62,8 @@ const Testimonial = () => {
           </div>
           <div className='cards'>
             <Slider {...settings}>
-              {testimonial.map((user) => (
-                <div>
+               {testimonial.map((user) => (
+                 <div key={user.id}>
                   <div className='card'>
                     <div className='image'>
                       <div className='img'>

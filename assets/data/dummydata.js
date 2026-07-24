@@ -52,31 +52,35 @@ export const expertise = [
 export const testimonial = [
   {
     id: 1,
-    name: "Alexander Black",
+    name: "Anjali Spices",
     cover: "../images/e1.jpg",
-    post: "Seven consulting - CEO",
-    desc: "Nunc fermentum - tempus erat ligula, sit amet lacinia justo cursus ac. Suspendisse quis nulla tincidunt! Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed rhoncus sapien!",
+    post: "Founder/Owner - Anjali Spices",
+    desc: "Good landing page design helped us create a strong digital identity",
+    url: "https://spices-landing-e-commerce.vercel.app/",
   },
   {
     id: 2,
-    name: "Diana Green",
+    name: "Karuna Special School Malpe",
     cover: "../images/e2.jpg",
-    post: "Seven Arts - marketing manager",
-    desc: "Cras at ornare fermentum quam et tortor euismod, vel maximus metus tristique at ornare ex, quis fringilla tortor. Aenean semper neque quis consectetur lobortis. Quisque nec convallis ex. Aenean ut metus et nunc cursus aliquet.",
+    post: "Head Master",
+    desc: "Helped us create a digital gallery and showcase everything through an editable admin dashboard. This has helped us reach more donations with authority",
+    url: "https://www.karunyaspecialschool.in/",
   },
   {
     id: 3,
-    name: "Alexander Black",
+    name: "Hakuna Matata Team",
     cover: "../images/e3.jpg",
-    post: "Seven consulting - CEO",
-    desc: "Nunc fermentum - tempus erat ligula, sit amet lacinia justo cursus ac. Suspendisse quis nulla tincidunt! Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed rhoncus sapien!",
+    post: "Product Team",
+    desc: "Created a nice customer review app - so happy with the app design and usability",
+    url: "#",
   },
   {
     id: 4,
-    name: "Diana Green",
+    name: "Focus Streak Team",
     cover: "../images/e4.jpg",
-    post: "Seven Arts - marketing manager",
-    desc: "Cras at ornare fermentum quam et tortor euismod, vel maximus metus tristique at ornare ex, quis fringilla tortor. Aenean semper neque quis consectetur lobortis. Quisque nec convallis ex. Aenean ut metus et nunc cursus aliquet.",
+    post: "Founders",
+    desc: "Helped us launch our first app with earning capabilities and good customer reviews",
+    url: "https://focusstreak.codemadebiz.com/",
   },
 ]
 export const showcase = [
@@ -143,36 +147,7 @@ export const brand = [
     cover: "../images/l6.svg",
   },
 ]
-export const blogdata = [
-  {
-    id: 1,
-    title: "Ligula vel urna accumsan placerat",
-    cover: "../images/b1.webp",
-    catgeory: "INDUSTRY",
-    date: "JANUARY 12, 2023",
-  },
-  {
-    id: 2,
-    title: "Don’t underestimate the lorem ipsum dolor amet",
-    cover: "../images/b2.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 20, 2023",
-  },
-  {
-    id: 3,
-    title: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
-    cover: "../images/b3.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 9, 2023",
-  },
-  {
-    id: 4,
-    title: "What eleifend posuere tincidunt",
-    cover: "../images/b4.jpg",
-    catgeory: "EVENTS",
-    date: "OCTOBER 8, 2023",
-  },
-]
+export { latestArticles2026 as blogdata } from "./latestArticles2026"
 export const teamdata = [
   {
     id: 1,
