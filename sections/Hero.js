@@ -1,11 +1,10 @@
 import { home } from "@/assets/data/dummydata"
 import Banner from "@/components/Banner"
 import Expertise from "@/components/Expertise"
-import ShowCase from "@/components/ShowCase"
 import Testimonial from "@/components/Testimonial"
 import TrustPilotReview from "@/components/TrustPilotReview"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
-import { BlogCard, Brand } from "@/components/router"
+import { BlogCard } from "@/components/router"
 import { Products, Services } from "@/sections"
 import React from "react"
 
@@ -49,9 +48,6 @@ const Hero = () => {
       <Services />
       <Testimonial />
       <TrustPilotReview />
-      <ShowCase />
-      <Brand />
-
       <div className='text-center'>
         <Title title='Latest news & articles' />
       </div>
