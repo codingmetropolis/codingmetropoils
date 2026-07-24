@@ -1,0 +1,22 @@
+{
+  "name": "Code Made Biz",
+  "short_name": "CodeMadeBiz",
+  "description": "Code Made Biz is a full-service digital agency specializing in website development, mobile apps, AI & ML solutions, branding, and digital marketing.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/l1.svg",
+      "sizes": "256x256",
+      "type": "image/svg+xml"
+    }
+  ]
+}

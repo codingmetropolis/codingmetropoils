@@ -6,7 +6,8 @@ const showcase = () => {
   return (
     <>
       <Head>
-        <title>ShowCase - 7Creative</title>
+        <title>Showcase - CodeMadeBiz</title>
+        <meta name="description" content="Explore CodeMadeBiz's portfolio showcasing our best work in website development, mobile applications, branding, and digital marketing projects for diverse clients." />
       </Head>
       <ShowCase />
     </>

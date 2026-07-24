@@ -54,7 +54,7 @@ export default function Appointment() {
         <>
             <Head>
                 <title>Request Appointment - Code Made Biz</title>
-                <meta name="description" content="Schedule an appointment with our team" />
+                <meta name="description" content="Schedule a consultation with CodeMadeBiz experts to discuss your web development, app development, or digital marketing project needs." />
             </Head>
             
             <section className='agency bg-top'>
